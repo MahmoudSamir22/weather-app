@@ -8,7 +8,7 @@ const foreCast = (lon, lat, callback) =>{
         }else if(body.cod != 200){
             callback(body.message, undefined)
         }else {
-            callback(undefined,{temp: body.main.temp, hum: body.main.humidity})
+            callback(undefined,{min_temp: body.main.temp_min, max_temp: body.main.temp_max})
         }
     })
 }

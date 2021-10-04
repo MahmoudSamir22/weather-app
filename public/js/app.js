@@ -12,7 +12,7 @@ const fetchWeather = (address) =>{
                 return p1.textContent= data.error
             }
             p1.textContent = data.location;
-            p2.textContent = `The weather temp is ${data.temp} C, And the humidity is ${data.hum}%`
+            p2.textContent = `The weather min temp is ${data.min_temp} degree, And the max temp is ${data.max_temp} degree`
         })
     })
 }
