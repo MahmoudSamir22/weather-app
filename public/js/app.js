@@ -4,7 +4,6 @@ const search = document.querySelector('input')
 const p1 = document.querySelector('#message-1')
 const p2 = document.querySelector('#message-2')
 
-console.log('Client side javascript file is loaded!')
 
 const fetchWeather = (address) =>{
     fetch(`http://localhost:3000/weather?address=${address}`).then((response)=> {
